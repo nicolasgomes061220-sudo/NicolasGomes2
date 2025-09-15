@@ -2,7 +2,7 @@ Olá!!!  Eu sou Nicolas Gomes
 
 💻 Estudante de Programação
 📚 Estudando Python
-🙂 ele/dele
+🙂 ele
 📱 +55 (81)996409390
 
 <br>
