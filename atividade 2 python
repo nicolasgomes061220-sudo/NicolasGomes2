@@ -1,0 +1,370 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMml0lZMwDH18rTXi8uVqU2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/nicolasgomes061220-sudo/NicolasGomes2/blob/main/atividade%202%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1, 11):\n",
+        "    print(i)\n"
+      ],
+      "metadata": {
+        "id": "Un9s5T74M-_o"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = 2\n",
+        "while num <= 50:\n",
+        "    if num % 2 == 0:\n",
+        "        print(num)\n",
+        "    num += 1\n"
+      ],
+      "metadata": {
+        "id": "h0bHslZhOHwJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Digite um número para ver a tabuada: \"))\n",
+        "for i in range(1, 11):\n",
+        "    print(f\"{num} x {i} = {num * i}\")\n"
+      ],
+      "metadata": {
+        "id": "Rw4C41APOH13"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "soma = sum(range(1, 101))\n",
+        "print(\"Soma de 1 a 100:\", soma)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "x2Eft1nlOH4A",
+        "outputId": "5fdbd0f4-a014-43fc-af30-4423075b5c13"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Soma de 1 a 100: 5050\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(10, -1, -1):\n",
+        "    print(i)\n",
+        "print(\"Fogo!\")\n"
+      ],
+      "metadata": {
+        "id": "JPBd8Q3ROH6N"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for letra in \"Programação\":\n",
+        "    print(letra)\n"
+      ],
+      "metadata": {
+        "id": "CFW3RrQIOH8U"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "notas = []\n",
+        "for i in range(5):\n",
+        "    nota = float(input(f\"Digite a nota {i+1}: \"))\n",
+        "    notas.append(nota)\n",
+        "media = sum(notas) / 5\n",
+        "print(\"Média:\", media)\n"
+      ],
+      "metadata": {
+        "id": "dSjTQDudOH-T"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "maior = None\n",
+        "for i in range(10):\n",
+        "    num = float(input(f\"Digite o {i+1}º número: \"))\n",
+        "    if maior is None or num > maior:\n",
+        "        maior = num\n",
+        "print(\"Maior número digitado:\", maior)\n"
+      ],
+      "metadata": {
+        "id": "YpRH2tMuOIAb"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "senha_correta = \"1234\"\n",
+        "senha = input(\"Digite a senha: \")\n",
+        "\n",
+        "while senha != senha_correta:\n",
+        "    senha = input(\"Senha incorreta. Tente novamente: \")\n",
+        "\n",
+        "print(\"Senha correta!\")\n"
+      ],
+      "metadata": {
+        "id": "RM8NWOPoOICg"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "palavra = input(\"Digite uma palavra: \").lower()\n",
+        "vogais = \"aeiou\"\n",
+        "contador = 0\n",
+        "\n",
+        "for letra in palavra:\n",
+        "    if letra in vogais:\n",
+        "        contador += 1\n",
+        "\n",
+        "print(\"Quantidade de vogais:\", contador)\n"
+      ],
+      "metadata": {
+        "id": "vTHzjWRGOIEM"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "resultado = 1\n",
+        "for i in range(5):\n",
+        "    num = float(input(f\"Digite o {i+1}º número: \"))\n",
+        "    resultado *= num\n",
+        "print(\"Resultado da multiplicação:\", resultado)\n"
+      ],
+      "metadata": {
+        "id": "Z0wp2O1jOIGf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Digite um número: \"))\n",
+        "é_primo = True\n",
+        "\n",
+        "if num < 2:\n",
+        "    é_primo = False\n",
+        "else:\n",
+        "    for i in range(2, int(num ** 0.5) + 1):\n",
+        "        if num % i == 0:\n",
+        "            é_primo = False\n",
+        "            break\n",
+        "\n",
+        "if é_primo:\n",
+        "    print(f\"{num} é primo\")\n",
+        "else:\n",
+        "    print(f\"{num} não é primo\")\n"
+      ],
+      "metadata": {
+        "id": "YYzR0nQHOIIn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1, 21):\n",
+        "    print(f\"{i}² = {i**2}\")\n"
+      ],
+      "metadata": {
+        "id": "IL0RrXU0OIKf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Digite um número: \"))\n",
+        "fatorial = 1\n",
+        "for i in range(2, num+1):\n",
+        "    fatorial *= i\n",
+        "print(f\"Fatorial de {num} é {fatorial}\")\n"
+      ],
+      "metadata": {
+        "id": "TCkN053ZOIMi"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a, b = 0, 1\n",
+        "for _ in range(15):\n",
+        "    print(a, end=' ')\n",
+        "    a, b = b, a + b\n"
+      ],
+      "metadata": {
+        "id": "XDPK4-WuOIP5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "limite = int(input(\"Digite o valor limite: \"))\n",
+        "for i in range(1, limite + 1):\n",
+        "    if i % 2 != 0:\n",
+        "        print(i)\n"
+      ],
+      "metadata": {
+        "id": "8-wBww_jOe3Z"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "\n",
+        "numero_secreto = random.randint(1, 20)\n",
+        "palpite = int(input(\"Adivinhe o número entre 1 e 20: \"))\n",
+        "\n",
+        "while palpite != numero_secreto:\n",
+        "    palpite = int(input(\"Errado! Tente novamente: \"))\n",
+        "\n",
+        "print(\"Parabéns! Você acertou.\")\n"
+      ],
+      "metadata": {
+        "id": "HxHh3lOnOe-g"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "palavra = input(\"Digite uma palavra: \").lower()\n",
+        "inverso = \"\"\n",
+        "\n",
+        "for letra in reversed(palavra):\n",
+        "    inverso += letra\n",
+        "\n",
+        "if palavra == inverso:\n",
+        "    print(\"É um palíndromo!\")\n",
+        "else:\n",
+        "    print(\"Não é um palíndromo.\")\n"
+      ],
+      "metadata": {
+        "id": "NxnZED81OfAd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1, 101):\n",
+        "    if i % 3 == 0 and i % 5 == 0:\n",
+        "        print(i)\n"
+      ],
+      "metadata": {
+        "id": "QlSQvclJOfCn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def menu():\n",
+        "    while True:\n",
+        "        print(\"\\nMenu:\")\n",
+        "        print(\"1. Somar dois números\")\n",
+        "        print(\"2. Calcular média de três números\")\n",
+        "        print(\"3. Sair\")\n",
+        "        escolha = input(\"Escolha uma opção: \")\n",
+        "\n",
+        "        if escolha == \"1\":\n",
+        "            a = float(input(\"Digite o primeiro número: \"))\n",
+        "            b = float(input(\"Digite o segundo número: \"))\n",
+        "            print(\"Soma:\", a + b)\n",
+        "\n",
+        "        elif escolha == \"2\":\n",
+        "            n1 = float(input(\"Nota 1: \"))\n",
+        "            n2 = float(input(\"Nota 2: \"))\n",
+        "            n3 = float(input(\"Nota 3: \"))\n",
+        "            media = (n1 + n2 + n3) / 3\n",
+        "            print(\"Média:\", media)\n",
+        "\n",
+        "        elif escolha == \"3\":\n",
+        "            print(\"Saindo...\")\n",
+        "            break\n",
+        "        else:\n",
+        "            print(\"Opção inválida!\")\n",
+        "menu()\n"
+      ],
+      "metadata": {
+        "id": "Ed3Oi8kpOfEH"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
